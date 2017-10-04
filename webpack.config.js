@@ -68,11 +68,5 @@ module.exports = {
       disable: !isProd,
       allChunks: true
     }),
-    new webpack.DefinePlugin({
-      'process.env':{
-        'BASE_URL': JSON.stringify('https://pokeapi.co/api/v2/type/2/'),
-        'POK_TYP': JSON.stringify('fighting')
-      }
-    }),
   ]
 }
